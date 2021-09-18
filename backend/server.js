@@ -12,15 +12,15 @@ dotenv.config();
 
 const app = express();
 
+// handling parsing json middleware
+app.use(express.json());
+
 // routes
 app.use("/api", homeRoutes);
 
 // routes error handler
 app.use(notFound);
 app.use(errorHandler);
-
-// handling parsing json middleware
-app.use(express.json());
 
 const PORT = process.env.PORT || 3001;
 const ENV = process.env.NODE_ENV;
