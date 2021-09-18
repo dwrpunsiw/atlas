@@ -1,0 +1,21 @@
+.brandlogo {
+  width: 8%;
+  height: auto;
+  cursor: pointer;
+}
+
+.navbar {
+  position: sticky;
+  top: 0;
+  opacity: 1;
+  transition: opacity 0.5s ease;
+}
+
+.navbarColor {
+  background-color: #d33350;
+}
+
+.navbarhide {
+  pointer-events: none;
+  opacity: 0;
+}

@@ -1,0 +1,34 @@
+.footer {
+  list-style: none;
+  font-style: normal;
+}
+
+.footerContainer {
+  background-color: red;
+  width: 100vw;
+}
+
+.list {
+  list-style: none;
+  font-style: normal;
+  margin: 0;
+  padding: 3px;
+}
+
+.link {
+  font-style: none;
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.55);
+}
+
+.link:hover {
+  color: rgba(0, 0, 0, 0.9);
+}
+
+.text {
+  color: rgba(0, 0, 0, 0.55);
+}
+
+.footerColor {
+  background-color: #d33350;
+}
