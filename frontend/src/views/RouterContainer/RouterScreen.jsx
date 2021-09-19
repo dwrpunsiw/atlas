@@ -6,6 +6,7 @@ import {
   Switch,
 } from "react-router-dom";
 import { Container } from "react-bootstrap";
+import { AnimatePresence } from "framer-motion";
 
 // Components
 import Header from "../../shared/components/Header/Header.jsx";
@@ -26,20 +27,22 @@ function RouterScreen() {
       <Header />
       <main>
         <Container fluid>
-          <Switch>
-            {/* Route */}
-            <Route path="/home" component={HomeScreen} exact />
-            <Route path="/about" component={AboutScreen} exact />
-            <Route path="/activity" component={ActivityScreen} exact />
-            <Route path="/contact" component={ContactScreen} exact />
-            <Route path="/events" component={EventsScreen} exact />
-            <Route path="/news" component={NewsScreen} exact />
-            <Route path="/shop" component={ShopScreen} exact />
+          <AnimatePresence>
+            <Switch>
+              {/* Route */}
+              <Route path="/home" component={HomeScreen} exact />
+              <Route path="/about" component={AboutScreen} exact />
+              <Route path="/activity" component={ActivityScreen} exact />
+              <Route path="/contact" component={ContactScreen} exact />
+              <Route path="/events" component={EventsScreen} exact />
+              <Route path="/news" component={NewsScreen} exact />
+              <Route path="/shop" component={ShopScreen} exact />
 
-            {/* Redirect */}
-            <Redirect from="/" to="/home" />
-            <Redirect to="/" />
-          </Switch>
+              {/* Redirect */}
+              <Redirect from="/" to="/home" />
+              <Redirect to="/" />
+            </Switch>
+          </AnimatePresence>
         </Container>
       </main>
       <Footer />

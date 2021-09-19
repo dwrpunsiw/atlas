@@ -1,5 +1,7 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
+import { LazyLoadComponent } from "react-lazy-load-image-component";
+import { motion } from "framer-motion";
 
 // classes
 // import classes from "../classes/ActivityScreen.module.css";
@@ -11,7 +13,12 @@ import { garun, internal } from "../../../shared/dummy/imagesDummy";
 
 function ActivityScreen() {
   return (
-    <div className="activity">
+    <motion.div
+      className="activity"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+    >
       <Container fluid>
         <div className="activity__title d-flex justify-content-center p-4">
           <h3>Our Activity</h3>
@@ -32,7 +39,9 @@ function ActivityScreen() {
                     className="px-0"
                     key={activity._id}
                   >
-                    <ActivityImages activity={activity} />
+                    <LazyLoadComponent>
+                      <ActivityImages activity={activity} />
+                    </LazyLoadComponent>
                   </Col>
                 );
               })}
@@ -51,7 +60,9 @@ function ActivityScreen() {
                     className="px-0"
                     key={activity._id}
                   >
-                    <ActivityImages activity={activity} />
+                    <LazyLoadComponent>
+                      <ActivityImages activity={activity} />
+                    </LazyLoadComponent>
                   </Col>
                 );
               })}
@@ -59,7 +70,7 @@ function ActivityScreen() {
           </Container>
         </div>
       </Container>
-    </div>
+    </motion.div>
   );
 }
 
