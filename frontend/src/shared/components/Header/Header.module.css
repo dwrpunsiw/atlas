@@ -9,6 +9,8 @@
   top: 0;
   opacity: 1;
   transition: opacity 0.5s ease;
+  z-index: 1;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.3);
 }
 
 .navbarColor {
@@ -18,4 +20,5 @@
 .navbarhide {
   pointer-events: none;
   opacity: 0;
+  transition: opacity 0.5s ease;
 }

@@ -12,7 +12,7 @@ function Header() {
 
   useEffect(() => {
     window.onscroll = () => {
-      if (window.scrollY > 100) {
+      if (window.scrollY > 200) {
         setShowNav(false);
       } else {
         setShowNav(true);
@@ -56,6 +56,11 @@ function Header() {
               <LinkContainer to="/about">
                 <Nav.Link>
                   <i className="fas fa-running p-2"></i> About Us
+                </Nav.Link>
+              </LinkContainer>
+              <LinkContainer to="/activity">
+                <Nav.Link>
+                  <i className="fas fa-hiking p-2"></i> Activity
                 </Nav.Link>
               </LinkContainer>
               <LinkContainer to="/shop">

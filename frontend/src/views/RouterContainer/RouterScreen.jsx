@@ -14,6 +14,7 @@ import Footer from "../../shared/components/Footer/Footer.jsx";
 // Screen
 import HomeScreen from "../HomeScreen/pages/HomeScreen.jsx";
 import AboutScreen from "../AboutScreen/pages/AboutScreen.jsx";
+import ActivityScreen from "../ActivityScreen/pages/ActivityScreen.jsx";
 import ContactScreen from "../ContactScreen/pages/ContactScreen.jsx";
 import EventsScreen from "../EventsScreen/pages/EventsScreen.jsx";
 import NewsScreen from "../NewsScreen/pages/NewsScreen.jsx";
@@ -29,6 +30,7 @@ function RouterScreen() {
             {/* Route */}
             <Route path="/home" component={HomeScreen} exact />
             <Route path="/about" component={AboutScreen} exact />
+            <Route path="/activity" component={ActivityScreen} exact />
             <Route path="/contact" component={ContactScreen} exact />
             <Route path="/events" component={EventsScreen} exact />
             <Route path="/news" component={NewsScreen} exact />
