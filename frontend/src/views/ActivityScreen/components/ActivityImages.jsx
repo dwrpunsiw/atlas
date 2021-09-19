@@ -10,7 +10,7 @@ function ActivityImages({ activity }) {
         effect="blur"
         src={activity.image}
         alt={activity.name}
-        width="460"
+        width="506"
         height="305"
       />
     </Card>
