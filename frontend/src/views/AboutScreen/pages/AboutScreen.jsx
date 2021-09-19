@@ -1,7 +1,16 @@
 import React from "react";
+import { motion } from "framer-motion";
 
 function AboutScreen() {
-  return <div>About Page</div>;
+  return (
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+    >
+      About Page
+    </motion.div>
+  );
 }
 
 export default AboutScreen;
