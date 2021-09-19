@@ -26,7 +26,7 @@ function RouterScreen() {
     <Router>
       <Header />
       <main>
-        <Container fluid>
+        <Container fluid className="px-0">
           <AnimatePresence>
             <Switch>
               {/* Route */}
