@@ -4,6 +4,7 @@
   "description": "Atlas Official Website",
   "main": "server.js",
   "scripts": {
+    "start": "node backend/server",
     "backend": "nodemon backend/server.js",
     "frontend": "npm start --prefix frontend",
     "dev": "concurrently \"npm run backend\" \"npm run frontend\"",

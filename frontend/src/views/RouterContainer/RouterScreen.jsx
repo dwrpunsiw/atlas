@@ -25,7 +25,7 @@ function RouterScreen() {
     <Router>
       <Header />
       <main>
-        <Container>
+        <Container fluid>
           <Switch>
             {/* Route */}
             <Route path="/home" component={HomeScreen} exact />
