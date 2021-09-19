@@ -18,7 +18,6 @@ Project is created with:
 
 - ReactJs
 - NodeJs (have not setup yet)
-- MongoDB (have not setup yet)
 
 ## Setup
 
