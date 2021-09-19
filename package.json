@@ -8,7 +8,8 @@
     "backend": "nodemon backend/server.js",
     "frontend": "npm start --prefix frontend",
     "dev": "concurrently \"npm run backend\" \"npm run frontend\"",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix frontend && npm run build --prefix frontend"
   },
   "author": "ATLAS Team",
   "license": "ISC",
