@@ -12,12 +12,12 @@ import { garun, internal } from "../../../shared/dummy/imagesDummy";
 function ActivityScreen() {
   return (
     <div className="activity">
-      <Container>
+      <Container fluid>
         <div className="activity__title d-flex justify-content-center p-4">
           <h3>Our Activity</h3>
         </div>
         <div className="activity__content">
-          <Container className="mb-3">
+          <Container className="mb-3" fluid>
             <h4 className="text-center text-decoration-underline">
               Ganesha Runiversity
             </h4>
@@ -38,7 +38,7 @@ function ActivityScreen() {
               })}
             </Row>
           </Container>
-          <Container>
+          <Container fluid>
             <h4 className="text-center text-decoration-underline">Internal</h4>
             <Row>
               {internal.map((activity) => {
