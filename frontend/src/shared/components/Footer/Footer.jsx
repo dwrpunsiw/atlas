@@ -12,7 +12,7 @@ function Footer() {
         expand="md"
         collapseOnSelect
         className={`${classes.footerColor} p-1 d-flex flex-column`}
-        fixed="bottom"
+        sticky="bottom"
       >
         <Container className="justify-content-center" fluid>
           <Nav>
