@@ -1,6 +1,9 @@
 import React from "react";
 import { motion } from "framer-motion";
 
+// components
+import Organogram from "../components/Organogram";
+
 function AboutScreen() {
   return (
     <motion.div
@@ -8,7 +11,7 @@ function AboutScreen() {
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
     >
-      About Page
+      <Organogram />
     </motion.div>
   );
 }
